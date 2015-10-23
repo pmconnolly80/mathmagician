@@ -16,19 +16,20 @@ namespace Mathmagician
     //type public then check test to pass the tests
     public class NaturalNumbers
     {
-
-        //private - nothing outside of NaturalNumbers can refer to it
+        
         protected int first;
+        protected int increment;
 
         //create Constructor. Ran when ever a new instance is created
         public NaturalNumbers()
         {
             first = 1;
+            increment = 1;
         }
 
         public virtual int GetNext(int x)
         {
-            return x+1;
+            return x+increment;
         }
 
         public int GetFirst()
